@@ -1,0 +1,88 @@
+//navbar desktop
+.navbarContainer{
+    width: 100%;
+    height: 80px;
+    background-color: $blanco-fondo;
+    box-shadow: 0px -1px 5px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    .nav{
+        width: 80%;
+        margin: 0 auto;
+        height: 80px;
+        padding: 5px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .navLogoContainer{
+            width: 170px;
+            height: 60px;
+
+            img{
+                object-fit: cover;
+            }
+        }
+        .linksContainer{
+            display: flex;
+            list-style: none;
+    
+            li{
+                margin-right: 20px;
+    
+                a{
+                    font-weight: bold;
+                    color: $azul-titulares;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        .hamButton{
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+.show{
+    right: 0;
+}
+
+@media only screen and (max-width: 992px){
+    .navbarContainer{
+        .nav{
+            position: relative;
+            .hamButton{
+                display: block;
+                border: none;
+            }
+            .linksContainer{
+                position: absolute;
+                top: 120%;
+                right: -100%;
+                opacity: 1;
+                flex-direction: column;
+                
+                li{
+                    margin: 0 0 10px 0;
+                    text-align: center;
+                    padding: 5px 10px;
+                    border: 1px solid $celeste-intenso;
+                    border-radius: 20px;
+                    background-color: $blanco-fondo;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+                    
+                }
+            }
+
+            
+
+        }
+    }
+}

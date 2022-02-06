@@ -1,0 +1,47 @@
+
+
+//----------------FUENTES------------------
+//nunito
+$nunito:'Nunito', sans-serif;
+//poppins
+$poppins: 'Poppins', sans-serif;
+
+//----------------COLORES------------------
+//BLANCO
+$blanco-fondo:#F7F7F7;
+//AZULES
+$azul-titulares: #1e1450;
+$celeste-intenso: #a2b6d1;
+$celeste-suave: #a2b6d1;
+//SALMONES
+$salmon-intenso: #f69a9b;
+$salmon-suave: #ffafae;
+//AMARILLOS
+$amarillo-intenso:#ffb564;
+$amarillo-suave: #FFC677;
+
+//-----------------MIXINs--------------------
+
+@mixin titulos {
+    color: $azul-titulares;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: $nunito;
+    text-align: center;
+    margin-bottom: 24px;
+}
+@mixin subtitulos {
+    color: $salmon-intenso;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $poppins;
+}
+@mixin sectionParrafos {
+    font-size: 16px;
+    color: $azul-titulares;
+    text-align: center;
+    line-height: 26px;
+    width: 100%;
+    margin: 0 auto;
+}
+
