@@ -8,5 +8,13 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoequintana/CKCproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicoequintana/CKCproject/issues"
+  },
+  "homepage": "https://github.com/nicoequintana/CKCproject#readme",
   "description": ""
 }

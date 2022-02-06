@@ -482,10 +482,6 @@ span {
   cursor: pointer;
 }
 
-.show {
-  right: 0;
-}
-
 @media only screen and (max-width: 992px) {
   .navbarContainer .nav {
     position: relative;
@@ -493,13 +489,16 @@ span {
   .navbarContainer .nav .hamButton {
     display: block;
     border: none;
+    transition: all ease-in-out 0.5s;
   }
   .navbarContainer .nav .linksContainer {
+    width: 100%;
     position: absolute;
     top: 120%;
-    right: -100%;
-    opacity: 1;
+    left: 0;
     flex-direction: column;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
   }
   .navbarContainer .nav .linksContainer li {
     margin: 0 0 10px 0;
@@ -509,6 +508,12 @@ span {
     border-radius: 20px;
     background-color: #F7F7F7;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+  }
+  .navbarContainer .nav .show {
+    opacity: 1;
+  }
+  .navbarContainer .nav .hamRotate {
+    transform: rotate(90deg);
   }
 }
 
