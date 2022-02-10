@@ -13,6 +13,7 @@ body {
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -482,6 +483,52 @@ span {
   cursor: pointer;
 }
 
+.gridGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "img1 img2 img3 img3" "img1 img2 img3 img3" "img4 img4 img5 img6" "img4 img4 img5 img6";
+}
+
+.galleryImg:nth-child(1) {
+  grid-area: img1;
+}
+
+.galleryImg:nth-child(2) {
+  grid-area: img2;
+}
+
+.galleryImg:nth-child(3) {
+  grid-area: img3;
+}
+
+.galleryImg:nth-child(4) {
+  grid-area: img4;
+}
+
+.galleryImg:nth-child(5) {
+  grid-area: img5;
+}
+
+.galleryImg:nth-child(6) {
+  grid-area: img6;
+}
+
+.galleryImg {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.galleryImg img {
+  transition: all ease 1s;
+  filter: brightness(50%);
+}
+.galleryImg img:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 992px) {
   .navbarContainer .nav {
     position: relative;
@@ -514,6 +561,11 @@ span {
   }
   .navbarContainer .nav .hamRotate {
     transform: rotate(90deg);
+  }
+
+  .gridGallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   }
 }
 
