@@ -57,11 +57,17 @@
                 border-radius: 40px;
                 border: none;
                 background-color: $amarillo-intenso;
+                transition: all ease-in-out 0.2s;
+                filter: brightness(.9);
+
+                &:hover{
+                    filter: brightness(1);
+                    box-shadow: 0 0 10px $amarillo-suave;
+                }
             }
         }
     }
 }
-
 
 //MEDIA QUERIES HEADER---------------------------------
 @media only screen and (max-width: 992px) {
@@ -465,6 +471,114 @@ span {
 
 }
 
-//Fourth section---------------------
-//galeria con grid
+//Fifth section---------------------
 
+.clientesCardsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.clientesCard{
+    background-color: $salmon-suave;
+    max-width: 480px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+
+    .clientesCardImg{
+        //background-color: red;
+        width: calc(100% - 60%);
+    }
+    
+    .clientesCardText{
+        //background-color: grey;
+        width: calc(100% - 40%);
+        padding: 30px 25px;
+
+        p, h4{
+            text-align: left;
+            margin-bottom: 20px;
+            color: $azul-titulares;
+        }
+
+        .familyComent{
+            font-size: 15px;
+        }
+
+        .familySurname{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: $nunito;
+        }
+    }
+}
+
+.clientesCard::after{
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+    font-family: font;
+    content: '♥';
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 40px;
+}
+
+.clientesCard:nth-child(2){
+    background-color: $amarillo-suave;
+}
+
+.clientesCard:nth-child(3){
+    background-color: $celeste-suave;
+}
+
+@media only screen and (max-width: 500px){
+    .clientesCard{
+        min-height: 250px;
+        background-color: $salmon-suave;
+        height: 515px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    
+        .clientesCardImg{
+            //background-color: red;
+            height: calc(100% - 40%);
+            width: 100%;
+            img{
+                object-fit: cover;
+                object-position: center top;
+            }
+        }
+        
+        .clientesCardText{
+            //background-color: grey;
+            height: calc(100% - 60%);
+            width: 100%;
+            padding: 15px 25px;
+
+            p, h4{
+                text-align: left;
+                margin-bottom: 20px;
+                color: $azul-titulares;
+            }
+    
+            .familyComent{
+                font-size: 15px;
+            }
+    
+            .familySurname{
+                font-size: 20px;
+                font-weight: bold;
+                font-family: $nunito;
+            }
+        }
+    }
+}
