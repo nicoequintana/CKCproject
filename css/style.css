@@ -72,11 +72,11 @@ section {
 .headerArea .heroContainer .heroContent .heroParagraph span {
   font-weight: bold;
 }
-.headerArea .heroContainer .heroContent button {
+
+.btn {
   width: 180px;
   height: 60px;
   text-align: center;
-  line-height: 56px;
   font-size: 16px;
   letter-spacing: 1px;
   color: #1e1450;
@@ -85,10 +85,10 @@ section {
   border: none;
   background-color: #ffb564;
   transition: all ease-in-out 0.2s;
-  filter: brightness(0.9);
-}
-.headerArea .heroContainer .heroContent button:hover {
   filter: brightness(1);
+}
+.btn:hover {
+  filter: brightness(1.1);
   box-shadow: 0 0 10px #FFC677;
 }
 
@@ -119,7 +119,8 @@ section {
   .headerArea .heroContainer .heroContent .heroParagraph span {
     font-weight: bold;
   }
-  .headerArea .heroContainer .heroContent button {
+
+  .btn {
     width: 120px;
     height: 40px;
     line-height: 50%;
@@ -540,6 +541,88 @@ span {
     font-family: "Nunito", sans-serif;
   }
 }
+.suscripciones {
+  width: 100%;
+  max-width: 100%;
+  background: #a2b6d1;
+}
+.suscripciones .tittleModifier {
+  color: #1e1450;
+}
+
+.planesContainer {
+  width: 90%;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planCard {
+  width: 280px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F7F7;
+  border-radius: 20px 5px 20px 5px;
+  padding: 30px 25px;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 0 3px #F7F7F7;
+}
+.planCard h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: #1e1450;
+  text-align: center;
+  transition: color ease-in-out 0.3s;
+}
+.planCard p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #1e1450;
+}
+.planCard p:nth-child(4) span {
+  font-weight: 800;
+  display: block;
+  font-size: 18px;
+}
+.planCard p:nth-child(5) {
+  font-weight: bold;
+  font-size: 35px;
+}
+.planCard .planImg {
+  margin: 10px 0;
+  padding: 10px;
+}
+.planCard .planImg img {
+  transition: all ease-in-out 0.3s;
+}
+
+.planCard:nth-child(1):hover h4 {
+  color: #a2b6d1;
+}
+.planCard:nth-child(1):hover .planImg img {
+  transform: scale(1.2);
+}
+
+.planCard:nth-child(2):hover h4 {
+  color: #f69a9b;
+}
+.planCard:nth-child(2):hover .planImg img {
+  transform: scale(1.2);
+}
+
+.planCard:nth-child(3):hover h4 {
+  color: #ffb564;
+}
+.planCard:nth-child(3):hover .planImg img {
+  transform: scale(1.2);
+}
+
 .navbarContainer {
   width: 100%;
   height: 80px;

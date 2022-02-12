@@ -45,27 +45,26 @@
                 }
             }
 
-            button {
-                width: 180px;
-                height: 60px;
-                text-align: center;
-                line-height: 56px;
-                font-size: 16px;
-                letter-spacing: 1px;
-                color: $azul-titulares;
-                font-weight: bold;
-                border-radius: 40px;
-                border: none;
-                background-color: $amarillo-intenso;
-                transition: all ease-in-out 0.2s;
-                filter: brightness(.9);
-
-                &:hover{
-                    filter: brightness(1);
-                    box-shadow: 0 0 10px $amarillo-suave;
-                }
-            }
         }
+    }
+}
+.btn {
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $azul-titulares;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    background-color: $amarillo-intenso;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(1);
+
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: 0 0 10px $amarillo-suave;
     }
 }
 
@@ -101,14 +100,14 @@
                     }
                 }
 
-                button {
-                    width: 120px;
-                    height: 40px;
-                    line-height: 50%;
-                    text-align: center;
-                }
             }
         }
+    }
+    .btn {
+        width: 120px;
+        height: 40px;
+        line-height: 50%;
+        text-align: center;
     }
 }
 
@@ -579,6 +578,111 @@ span {
                 font-weight: bold;
                 font-family: $nunito;
             }
+        }
+    }
+}
+
+//Sixth section---------------------
+.suscripciones{
+    width: 100%;
+    max-width: 100%;
+    //height: 70vh;
+    background: $celeste-suave;
+    //overflow: hidden;
+
+    .tittleModifier{
+        color: $azul-titulares;
+    }
+}
+
+.planesContainer{
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.planCard{
+    width: 280px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $blanco-fondo;
+    border-radius: 20px 5px 20px 5px;
+    padding: 30px 25px;
+    font-family: $nunito;
+    box-shadow: 0 0 3px $blanco-fondo;
+
+    h4{
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 35px;
+        color: $azul-titulares;
+        text-align: center;
+        transition: color ease-in-out 0.3s;
+    }
+
+    p{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+        color: $azul-titulares;
+    }
+
+    p:nth-child(4){
+        span{
+            font-weight: 800;
+            display: block;
+            font-size: 18px;
+        }
+    }
+
+    p:nth-child(5){
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .planImg{
+        margin: 10px 0;
+        padding: 10px;
+
+        img{
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+}
+
+.planCard:nth-child(1):hover{
+    h4{
+        color: $celeste-intenso;
+    }
+    .planImg{
+        img{
+            transform: scale(1.2);
+        }
+    }
+}
+.planCard:nth-child(2):hover{
+    h4{
+        color: $salmon-intenso;
+    }
+    .planImg{
+        img{
+            transform: scale(1.2);
+        }
+    }
+}
+.planCard:nth-child(3):hover{
+    h4{
+        color: $amarillo-intenso;
+    }
+    .planImg{
+        img{
+            transform: scale(1.2);
         }
     }
 }
