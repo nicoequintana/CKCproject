@@ -115,9 +115,9 @@
                 width: 100%;
                 position: absolute;
                 top: 120%;
-                left: 0;
+                right: -120%;
                 flex-direction: column;
-                opacity: 0;
+                opacity: 1;
                 transition: all ease-in-out .5s;
 
                 li {
@@ -133,7 +133,7 @@
             }
 
             .show {
-                opacity: 1;
+                right: 0;
             }
 
             .hamRotate{
