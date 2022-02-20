@@ -1,3 +1,13 @@
+//loader--------------
+window.onload = function() {
+    alert('he cargado la pagina')
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden')
+
+}
+
+//-------------------------------------------------------
+
 const btnMenu = document.querySelector('#btnMenu');
 const menu = document.querySelector('#menu');
 const link = document.querySelectorAll('.link')

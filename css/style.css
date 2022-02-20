@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #F7F7F7;
@@ -75,7 +79,8 @@ section {
 
 .btn {
   width: 180px;
-  height: 60px;
+  height: 40px;
+  padding: 10px;
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
@@ -639,6 +644,144 @@ span {
   transform: scale(1.2);
 }
 
+.formContainer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formContainer .formContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formContainer .formContent label, .formContainer .formContent input, .formContainer .formContent textarea {
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+.formContainer .formContent label {
+  background-color: #1e1450;
+  color: #F7F7F7;
+  font-size: 15px;
+}
+.formContainer .textAreaContainer {
+  width: 100%;
+}
+.formContainer .textAreaContainer textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+}
+
+@media only screen and (max-width: 866px) {
+  .formContainer .formContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .formContainer .formContent label, .formContainer .formContent input {
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
+  }
+  .formContainer .formContent label {
+    background-color: #1e1450;
+    color: #F7F7F7;
+    font-size: 15px;
+  }
+}
+.hidden {
+  overflow: hidden;
+}
+
+.centrado {
+  width: 100%;
+  background: #171d5b;
+  background: radial-gradient(circle, #171d5b 0%, black 55%);
+  height: 100Vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
 .navbarContainer {
   width: 100%;
   height: 80px;
