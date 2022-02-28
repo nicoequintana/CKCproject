@@ -1,6 +1,5 @@
 //loader--------------
 window.onload = function() {
-    alert('he cargado la pagina')
     $('#onload').fadeOut();
     $('body').removeClass('hidden')
 
