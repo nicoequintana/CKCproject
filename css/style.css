@@ -707,6 +707,9 @@ span {
   margin: 0;
   padding: 1rem;
 }
+.footerContainer h6 {
+  text-align: center;
+}
 
 .footerContent {
   width: 80%;
@@ -754,22 +757,6 @@ span {
     display: flex;
     justify-content: center;
   }
-  .footerContent .footerInfo {
-    width: 100%;
-    min-width: 150px;
-    text-align: left;
-    font-size: 12px;
-    margin-bottom: 35px;
-  }
-  .footerContent .footerInfo h5 {
-    font-size: 18px;
-  }
-  .footerContent .footerInfo p {
-    text-align: justify;
-  }
-  .footerContent .footerInfo ul {
-    padding-left: 15px;
-  }
   .footerContent .footerIconContainer {
     display: flex;
     justify-content: flex-start;
@@ -785,40 +772,7 @@ span {
 }
 @media only screen and (min-width: 450px) and (max-width: 968px) {
   .footerContent {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
     justify-content: space-between;
-  }
-  .footerContent .footerInfo {
-    width: 30%;
-    min-width: 150px;
-    text-align: left;
-    font-size: 12px;
-    margin-bottom: 35px;
-    margin-right: 25px;
-  }
-  .footerContent .footerInfo h5 {
-    font-size: 18px;
-  }
-  .footerContent .footerInfo p {
-    text-align: justify;
-  }
-  .footerContent .footerInfo ul {
-    padding-left: 15px;
-  }
-  .footerContent .footerIconContainer {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .footerContent .footerIconContainer i {
-    margin-right: 20px;
-    font-size: 20px;
-    transition: all ease-in-out 0.3s;
-  }
-  .footerContent .footerIconContainer i:hover {
-    text-shadow: 0px 0px 15px #F7F7F7;
   }
 }
 .hidden {
